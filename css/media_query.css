@@ -1,14 +1,12 @@
 /*------------------------------PC버전--------------------------*/
-
 @media screen and (max-width:1920px){
     html,body{width: 100%;}
 }
 
-
 /*------------------------------테블릿 버전--------------------------*/
 
 @media screen and (max-width:1200px){
-    html{font-size: 14px; cursor:auto;}
+    html{font-size: 13px; cursor:auto;}
     body, a {cursor:auto;}
     .cursor{display: none;}
     #menu_wrap>#main_nav{width: 95%;}
@@ -42,7 +40,6 @@
 
 @media screen and (max-width:480px){
     html{font-size: 11px;}
-    #menu_wrap #main_nav{margin: 220px auto;}
     #menu_wrap>#main_nav>#menu li>a{font-size: 1.5em;}
     #text_list .tit a {font-size:2.3em;}
     #text_list .more_btn{width: 130px; height: 40px;}
@@ -51,15 +48,6 @@
     #visual_pager li a{text-align: center;}
     #visual_black img:nth-child(2){display: none;}
 }
-
-
-
-
-
-
-
-
-
 
 
 

@@ -5,6 +5,9 @@
 }
 
 /*font-family: 'Noto Sans KR', sans-serif;*/
+html{
+    font-size: 14px;
+}
 
 html,body {
     width: 100%;
@@ -242,9 +245,18 @@ header {
 
 #menu_wrap #main_nav {
     display: block;
+    position: absolute;
     width: 80%;
     height: 340px;
-    margin: 330px auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #menu_wrap #main_nav #menu {
@@ -300,8 +312,14 @@ header {
     position: absolute;
     width: 35px;
     height: 200px;
-    top: 340px;
+    top: 50%;
     right: 2%;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #sns #icon_list {
@@ -484,6 +502,7 @@ header {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.313em;
     font-weight: 300;
+    margin-top: 5px;
     margin-bottom: 22px;
     line-height: 1.2;
 }
@@ -492,8 +511,8 @@ header {
 #text_list .more_btn{
     position: relative;
     display: block;
-    width: 165px;
-    height: 55px;
+    width: 135px;
+    height: 45px;
     background: white;
     border-radius: 30px;
     overflow: hidden;
@@ -514,12 +533,11 @@ header {
 
 #text_list .more_btn p {
     position: relative;
-    line-height: 55px;
+    line-height: 45px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #333;
-    line-height: 55px;
     text-align: center;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -535,7 +553,7 @@ header {
     display: block;
     position: absolute;
     width: 0%;
-    left: 0;
+    left: 0%;
     height: 100%;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -550,19 +568,19 @@ header {
 }
 
 #text_list li:nth-child(1)>.more_btn a:before{
-    background: orange;
+    background: rgb(124, 124, 124);
 }
 
 #text_list li:nth-child(2)>.more_btn a:before{
-    background: purple;
+    background: rgb(26, 114, 26);
 }
 
 #text_list li:nth-child(3)>.more_btn a:before{
-    background: green;
+    background: rgb(100, 15, 100);
 }
 
 #text_list li:nth-child(4)>.more_btn a:before{
-    background: blue;
+    background: rgb(252, 96, 49);
 }
 
 #text_list .more_btn a:hover p,#text_list .more_btn a:focus p{

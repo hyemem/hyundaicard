@@ -75,7 +75,6 @@ $(window).load(function () {
                 textLi.eq(index).stop().animate({'opacity': 1,'right': 0}, 1500, "easeOutCubic");
             }
             currentIndex = index; //currentIndex를 index값(현재 슬라이드 순서)으로 초기화
-            console.log(currentIndex);
             
             visualPager.removeClass('active');
             visualPager.parent('li').eq(currentIndex).children().addClass("active"); //현재 사진 순서에 맞는 pager 활성화 효과
